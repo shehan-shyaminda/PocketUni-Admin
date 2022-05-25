@@ -10,13 +10,27 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PocketUniAdmin">
         <activity
-            android:name=".TestEmptyActivity"
+            android:name=".AddNewEvent"
             android:exported="false" />
         <activity
-            android:name=".TestActivity"
-            android:exported="false"
-            android:label="@string/title_activity_test"
-            android:theme="@style/Theme.PocketUniAdmin.NoActionBar" />
+            android:name=".EditProfile"
+            android:exported="false" />
+        <activity
+            android:name=".AdminProfile"
+            android:exported="false" />
+        <activity
+            android:name=".AddNewSubject"
+            android:exported="false" />
+        <activity
+            android:name=".AddNewBatch"
+            android:exported="false" />
+        <activity
+            android:name=".CalenderEvents"
+            android:exported="false" />
+        <activity
+            android:name=".TestEmptyActivity"
+            android:exported="false" />
+
         <activity
             android:name=".LoginActivity"
             android:exported="false" />

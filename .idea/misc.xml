@@ -4,9 +4,15 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/BSc/1st Year/RWP/Project/Admin/PocketUni-Admin/app/src/main/res/drawable/layoutborder.xml" value="0.1445" />
+        <entry key="..\:/BSc/1st Year/RWP/Project/Admin/PocketUni-Admin/app/src/main/res/layout/activity_add_new_batch.xml" value="0.264" />
+        <entry key="..\:/BSc/1st Year/RWP/Project/Admin/PocketUni-Admin/app/src/main/res/layout/activity_add_new_event.xml" value="0.2375" />
+        <entry key="..\:/BSc/1st Year/RWP/Project/Admin/PocketUni-Admin/app/src/main/res/layout/activity_add_new_subject.xml" value="0.2375" />
+        <entry key="..\:/BSc/1st Year/RWP/Project/Admin/PocketUni-Admin/app/src/main/res/layout/activity_admin_profile.xml" value="0.2375" />
+        <entry key="..\:/BSc/1st Year/RWP/Project/Admin/PocketUni-Admin/app/src/main/res/layout/activity_calender_events.xml" value="0.2006340579710145" />
+        <entry key="..\:/BSc/1st Year/RWP/Project/Admin/PocketUni-Admin/app/src/main/res/layout/activity_edit_profile.xml" value="0.264" />
         <entry key="..\:/BSc/1st Year/RWP/Project/Admin/PocketUni-Admin/app/src/main/res/layout/activity_forgot_password.xml" value="0.18795289855072464" />
         <entry key="..\:/BSc/1st Year/RWP/Project/Admin/PocketUni-Admin/app/src/main/res/layout/activity_login.xml" value="0.2" />
-        <entry key="..\:/BSc/1st Year/RWP/Project/Admin/PocketUni-Admin/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/BSc/1st Year/RWP/Project/Admin/PocketUni-Admin/app/src/main/res/layout/activity_main.xml" value="0.264" />
         <entry key="..\:/BSc/1st Year/RWP/Project/Admin/PocketUni-Admin/app/src/main/res/layout/activity_sign_up.xml" value="0.18795289855072464" />
         <entry key="..\:/BSc/1st Year/RWP/Project/Admin/PocketUni-Admin/app/src/main/res/layout/activity_splash.xml" value="0.18795289855072464" />
         <entry key="..\:/BSc/1st Year/RWP/Project/Admin/PocketUni-Admin/app/src/main/res/layout/activity_test_empty.xml" value="0.2006340579710145" />

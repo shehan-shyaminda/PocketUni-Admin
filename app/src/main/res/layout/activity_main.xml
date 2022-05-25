@@ -123,10 +123,10 @@
 
                         <ImageView
                             android:id="@+id/imageView9"
-                            android:layout_width="80dp"
-                            android:layout_height="wrap_content"
+                            android:layout_width="90dp"
+                            android:layout_height="59dp"
                             android:layout_weight="1"
-                            app:srcCompat="@drawable/business_lady" />
+                            app:srcCompat="@drawable/books" />
                     </LinearLayout>
 
                 </LinearLayout>
