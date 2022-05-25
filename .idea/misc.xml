@@ -3,6 +3,16 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/BSc/1st Year/RWP/Project/Admin/PocketUni-Admin/app/src/main/res/drawable/layoutborder.xml" value="0.1445" />
+        <entry key="..\:/BSc/1st Year/RWP/Project/Admin/PocketUni-Admin/app/src/main/res/layout/activity_forgot_password.xml" value="0.18795289855072464" />
+        <entry key="..\:/BSc/1st Year/RWP/Project/Admin/PocketUni-Admin/app/src/main/res/layout/activity_login.xml" value="0.2" />
+        <entry key="..\:/BSc/1st Year/RWP/Project/Admin/PocketUni-Admin/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/BSc/1st Year/RWP/Project/Admin/PocketUni-Admin/app/src/main/res/layout/activity_sign_up.xml" value="0.18795289855072464" />
+        <entry key="..\:/BSc/1st Year/RWP/Project/Admin/PocketUni-Admin/app/src/main/res/layout/activity_splash.xml" value="0.18795289855072464" />
+        <entry key="..\:/BSc/1st Year/RWP/Project/Admin/PocketUni-Admin/app/src/main/res/layout/activity_test_empty.xml" value="0.2006340579710145" />
+        <entry key="..\:/BSc/1st Year/RWP/Project/Admin/PocketUni-Admin/app/src/main/res/layout/bottomsheet_calender.xml" value="0.18795289855072464" />
+        <entry key="..\:/BSc/1st Year/RWP/Project/Admin/PocketUni-Admin/app/src/main/res/layout/fragment_announcements.xml" value="0.18795289855072464" />
+        <entry key="..\:/BSc/1st Year/RWP/Project/Admin/PocketUni-Admin/app/src/main/res/layout/fragment_home.xml" value="0.18795289855072464" />
         <entry key="app/src/main/res/drawable/custom_button_background.xml" value="0.225" />
         <entry key="app/src/main/res/drawable/ic_menu_background.xml" value="0.224" />
         <entry key="app/src/main/res/layout/activity_login.xml" value="0.21822916666666667" />
@@ -17,7 +27,7 @@
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="Android API 29 Platform" project-jdk-type="Android SDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">

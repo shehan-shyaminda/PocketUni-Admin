@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:backgroundTint="#FFFFFF"
     tools:context=".MainActivity">
 
     <androidx.drawerlayout.widget.DrawerLayout
@@ -26,7 +27,116 @@
                 app:layout_constraintBottom_toTopOf="@+id/bottomMenu"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="285dp"
+                    android:layout_height="219dp"
+                    android:layout_gravity="center_horizontal"
+                    app:srcCompat="@drawable/business_lady" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="299dp"
+                    android:layout_gravity="bottom"
+                    android:layout_margin="@dimen/row_height"
+                    android:layout_marginVertical="10dp"
+                    android:orientation="vertical"
+                    android:paddingVertical="5dp"
+                    android:paddingStart="5dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp">
+
+                    <LinearLayout
+                        android:layout_width="315dp"
+                        android:layout_height="78dp"
+                        android:background="@color/black"
+                        android:backgroundTint="#B1C7F1"
+                        android:orientation="horizontal"
+                        android:radius="50dp"
+                        android:visibility="visible">
+
+                        <Button
+                            android:id="@+id/btnCalenderEvents"
+                            style="?android:attr/borderlessButtonStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:backgroundTint="#FFFFFF"
+                            android:text="Calender Events" />
+
+                        <ImageView
+                            android:id="@+id/imageView7"
+                            android:layout_width="80dp"
+                            android:layout_height="60dp"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/calendar" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="24dp"
+                        android:backgroundTint="#BCC1CA"
+                        android:orientation="horizontal"></LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="315dp"
+                        android:layout_height="78dp"
+                        android:background="#000000"
+                        android:backgroundTint="#B1C7F1"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/btnAddNewBatch"
+                            style="?android:attr/borderlessButtonStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:backgroundTint="#FFFFFF"
+                            android:text="ADD NEW BATCH" />
+
+                        <ImageView
+                            android:id="@+id/imageView8"
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/college_students_sit_on_the_grass_in_front_of_the_university_building" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="24dp"
+                        android:orientation="horizontal"></LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="315dp"
+                        android:layout_height="78dp"
+                        android:orientation="horizontal"
+                        android:background="#000000"
+                        android:backgroundTint="#B1C7F1">
+                        <Button
+                            android:id="@+id/btnAddNewSubject"
+                            style="?android:attr/borderlessButtonStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:backgroundTint="#FFFFFF"
+                            android:text="ADD NEW SUBJECT" />
+
+                        <ImageView
+                            android:id="@+id/imageView9"
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/business_lady" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </FrameLayout>
 
             <nl.joery.animatedbottombar.AnimatedBottomBar
                 android:id="@+id/bottomMenu"
@@ -71,8 +181,9 @@
                     android:layout_marginStart="24dp"
                     android:background="@color/white"
                     android:gravity="center"
-                    android:text="My Events"
+                    android:text="Welcome"
                     android:textAllCaps="false"
+                    android:textColor="#000000"
                     android:textSize="24sp"
                     android:textStyle="bold"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -91,8 +202,7 @@
             app:headerLayout="@layout/nav_drawer_headder"
             app:itemIconTint="#000000"
             app:itemTextColor="#020000"
-            app:menu="@menu/nav_drawer_menu">
-        </com.google.android.material.navigation.NavigationView>
+            app:menu="@menu/nav_drawer_menu"></com.google.android.material.navigation.NavigationView>
 
     </androidx.drawerlayout.widget.DrawerLayout>
 
