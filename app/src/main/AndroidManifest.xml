@@ -10,6 +10,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PocketUniAdmin">
         <activity
+            android:name=".Help"
+            android:exported="false" />
+        <activity
+            android:name=".AboutUs"
+            android:exported="false" />
+        <activity
+            android:name=".MailConfirmation"
+            android:exported="false" />
+        <activity
+            android:name=".Signup"
+            android:exported="false" />
+        <activity
             android:name=".AddNewEvent"
             android:exported="false" />
         <activity
@@ -30,7 +42,6 @@
         <activity
             android:name=".TestEmptyActivity"
             android:exported="false" />
-
         <activity
             android:name=".LoginActivity"
             android:exported="false" />

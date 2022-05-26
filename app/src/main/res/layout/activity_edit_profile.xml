@@ -60,6 +60,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="104dp"
                     android:text="My Profile"
+                    android:textColor="#000000"
                     android:textSize="24sp"
                     android:textStyle="bold"
                     app:layout_constraintStart_toStartOf="parent"
