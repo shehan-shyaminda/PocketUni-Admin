@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PocketUniAdmin">
         <activity
+            android:name=".SuperAdminHome"
+            android:exported="false" />
+        <activity
+            android:name=".ContactSuperAdmin"
+            android:exported="false" />
+        <activity
             android:name=".Help"
             android:exported="false" />
         <activity
