@@ -31,7 +31,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
                 app:layout_constraintVertical_bias="0.0">
 
-                <LinearLayout
+                <!--<LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="299dp"
                     android:layout_gravity="bottom"
@@ -129,14 +129,14 @@
                             app:srcCompat="@drawable/books" />
                     </LinearLayout>
 
-                </LinearLayout>
+                </LinearLayout>-->
 
-                <ImageView
+                <!--<ImageView
                     android:id="@+id/imageView4"
                     android:layout_width="285dp"
                     android:layout_height="219dp"
                     android:layout_gravity="center_horizontal"
-                    app:srcCompat="@drawable/business_lady" />
+                    app:srcCompat="@drawable/business_lady" />-->
 
                 <!--<androidx.cardview.widget.CardView
                     android:layout_width="339dp"
@@ -208,28 +208,12 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
-                <TextView
-                    android:id="@+id/fragmentTitle"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_marginStart="24dp"
-                    android:background="@color/white"
-                    android:gravity="center"
-                    android:text="Welcome"
-                    android:textAllCaps="false"
-                    android:textColor="#000000"
-                    android:textSize="24sp"
-                    android:textStyle="bold"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/ic_menu"
-                    app:layout_constraintTop_toTopOf="parent" />
-
                 <ImageView
                     android:id="@+id/imageView6"
                     android:layout_width="99dp"
                     android:layout_height="93dp"
-                    android:layout_marginStart="107dp"
-                    app:layout_constraintStart_toEndOf="@+id/fragmentTitle"
+                    android:layout_marginStart="232dp"
+                    app:layout_constraintStart_toEndOf="@+id/ic_menu"
                     app:layout_constraintTop_toTopOf="parent"
                     app:srcCompat="@drawable/ic_logo" />
 

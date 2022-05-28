@@ -43,29 +43,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView27" />
 
-    <EditText
-        android:id="@+id/editTextTextPersonName3"
-        android:layout_width="319dp"
-        android:layout_height="217dp"
-        android:layout_marginStart="49dp"
-        android:layout_marginTop="25dp"
-        android:ems="10"
-        android:hint="Body"
-        android:inputType="textPersonName"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextSubject" />
-
     <Button
         android:id="@+id/button"
         android:layout_width="294dp"
         android:layout_height="60dp"
         android:layout_marginStart="58dp"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="10dp"
         android:backgroundTint="#052FAD"
         android:text="SEND"
         android:textColor="#FFFFFF"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName3" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine" />
 
     <TextView
         android:id="@+id/textView28"
@@ -89,4 +77,21 @@
         android:textSize="16sp"
         app:layout_constraintStart_toEndOf="@+id/textView28"
         app:layout_constraintTop_toBottomOf="@+id/button" />
+
+    <EditText
+        android:id="@+id/editTextTextMultiLine"
+        android:layout_width="316dp"
+        android:layout_height="244dp"
+        android:layout_marginStart="54dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="41dp"
+        android:layout_marginBottom="10dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Body"
+        android:inputType="textMultiLine"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextSubject" />
 </androidx.constraintlayout.widget.ConstraintLayout>
