@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PocketUniAdmin">
         <activity
+            android:name=".ResetStudentPasswords"
+            android:exported="false" />
+        <activity
             android:name=".SuperAdminHome"
             android:exported="false" />
         <activity
