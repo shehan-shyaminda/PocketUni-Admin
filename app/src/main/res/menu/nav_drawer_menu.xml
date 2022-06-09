@@ -10,4 +10,9 @@
         android:icon="@drawable/ic_us"
         android:title="About Us">
     </item>
+    <item
+        android:id="@+id/newAdmin"
+        android:icon="@drawable/ic_newadmin"
+        android:title="About Us">
+    </item>
 </menu>

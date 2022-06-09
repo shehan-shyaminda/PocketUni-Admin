@@ -22,21 +22,7 @@ public class HomeFragment extends Fragment {
                              Bundle savedInstanceState) {
 
         View view = inflater.inflate(R.layout.fragment_home, container, false);
-        btnCalender = view.findViewById(R.id.btn_calender);
 
-        btnCalender.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                BottomSheetDialog bottomSheetDialog = new BottomSheetDialog(getContext(), R.style.BottSheetDialogTheme);
-                View bottomSheetView = LayoutInflater.from(getContext()).inflate(R.layout.bottomsheet_calender, view.findViewById(R.id.bottom_sheet_container));
-                CalendarView calendarView = bottomSheetView.findViewById(R.id.calendarView);
-
-                // TODO : ADD Event
-
-                bottomSheetDialog.setContentView(bottomSheetView);
-                bottomSheetDialog.show();
-            }
-        });
 
         return view;
     }

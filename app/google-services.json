@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "865842445968",
+    "project_id": "pocketuni-nibm",
+    "storage_bucket": "pocketuni-nibm.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:865842445968:android:14ec507b8ee50fa372e215",
+        "android_client_info": {
+          "package_name": "com.codelabs.pocketuni"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "865842445968-7ikbp8ufbagnjedioc6u6th1m0eh79ui.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBgKb4nHTB1RvB3nMF2eg4uPqT96jhl2V8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "865842445968-7ikbp8ufbagnjedioc6u6th1m0eh79ui.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:865842445968:android:746cd955a7f3f72772e215",
+        "android_client_info": {
+          "package_name": "com.codelabs.pocketuni_admin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "865842445968-7ikbp8ufbagnjedioc6u6th1m0eh79ui.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBgKb4nHTB1RvB3nMF2eg4uPqT96jhl2V8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "865842445968-7ikbp8ufbagnjedioc6u6th1m0eh79ui.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

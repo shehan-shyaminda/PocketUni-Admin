@@ -18,10 +18,13 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.codelabs.pocketuni_admin.services.SharedPreferencesManager;
 import com.codelabs.pocketuni_admin.ui.AnnouncementsFragment;
 import com.codelabs.pocketuni_admin.ui.HomeFragment;
 import com.codelabs.pocketuni_admin.ui.NoticesFragment;
 import com.codelabs.pocketuni_admin.ui.ProfileFragment;
+import com.codelabs.pocketuni_admin.utils.CustomAlertDialog;
+import com.crowdfire.cfalertdialog.CFAlertDialog;
 import com.google.android.material.navigation.NavigationView;
 
 import nl.joery.animatedbottombar.AnimatedBottomBar;
@@ -34,6 +37,8 @@ public class MainActivity extends AppCompatActivity {
     private AnimatedBottomBar bottomBar;
     private ImageView icMenu, btnCalender;
     private TextView fragmentTitle;
+    private SharedPreferencesManager sharedPreferencesManager;
+    private CustomAlertDialog customAlertDialog;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,6 +52,8 @@ public class MainActivity extends AppCompatActivity {
         getSupportFragmentManager().beginTransaction().replace(R.id.frameLayout, new HomeFragment()).commit();
         bottomBar.selectTabById(R.id.home,true);
         fragmentTitle.setText("My Events");
+        sharedPreferencesManager = new SharedPreferencesManager(MainActivity.this);
+        customAlertDialog = new CustomAlertDialog();
 
         SideDrawerInitializing();
 
@@ -99,16 +106,6 @@ public class MainActivity extends AppCompatActivity {
         nvDrawer = (NavigationView) findViewById(R.id.nav_view);
         mToggle.syncState();
         setupDrawerContent(nvDrawer);
-//        ic_menuOpen = nvDrawer.findViewById(R.id.nav_drawer_open);
-//
-//        ic_menuOpen.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                setDrawerPosition();
-//            }
-//        });
-
-        //----------------pass value to header---------------
         View hView = nvDrawer.getHeaderView(0);
     }
 
@@ -118,10 +115,20 @@ public class MainActivity extends AppCompatActivity {
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 switch (item.getItemId()){
                     case R.id.contactUs:
+                        mDrawerLayout.closeDrawer(GravityCompat.START);
                         Log.e(TAG, "onNavigationItemSelected: " + item.getTitle());
                         break;
                     case R.id.aboutUs:
+                        mDrawerLayout.closeDrawer(GravityCompat.START);
                         Log.e(TAG, "onNavigationItemSelected: " + item.getTitle());
+                        break;
+                    case R.id.newAdmin:
+                        mDrawerLayout.closeDrawer(GravityCompat.START);
+                        if (sharedPreferencesManager.getBooleanPreferences(SharedPreferencesManager.PREF_IS_SUPER_ADMIN)){
+                            customAlertDialog.positiveDismissAlert(MainActivity.this, "Congrats!", "You have just unlocked super admin feature!", CFAlertDialog.CFAlertStyle.NOTIFICATION);
+                        }else{
+                            customAlertDialog.negativeDismissAlert(MainActivity.this, "Oops!", "Sign-in with super admin account to access this feature!",  CFAlertDialog.CFAlertStyle.NOTIFICATION);
+                        }
                         break;
                 }
                 return true;
