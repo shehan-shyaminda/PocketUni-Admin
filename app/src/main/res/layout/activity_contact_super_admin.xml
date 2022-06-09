@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ContactSuperAdmin">
+
+    <ImageView
+        android:id="@+id/imageView16"
+        android:layout_width="438dp"
+        android:layout_height="355dp"
+        android:layout_marginStart="-14dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/rectangle_116" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout8"
+        android:layout_width="337dp"
+        android:layout_height="282dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="7dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView16">
+
+
+        <ImageButton
+            android:id="@+id/imgBtnCall"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="55dp"
+            android:layout_marginTop="65dp"
+            android:backgroundTint="#052FAD"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/icons8_call_50__1_"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/imgBtnChat"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="46dp"
+            android:layout_marginTop="65dp"
+            android:backgroundTint="#052FAD"
+            app:layout_constraintStart_toEndOf="@+id/imgBtnCall"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/whatsapp_48"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <TextView
+            android:id="@+id/textView30"
+            android:layout_width="100dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="55dp"
+            android:layout_marginTop="8dp"
+            android:text="Make a Call"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgBtnCall" />
+
+        <TextView
+            android:id="@+id/textView33"
+            android:layout_width="106dp"
+            android:layout_height="51dp"
+            android:layout_marginStart="52dp"
+            android:layout_marginTop="10dp"
+            android:text="Chat with Super Admin"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/textView30"
+            app:layout_constraintTop_toBottomOf="@+id/imgBtnChat" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/imageView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="-300dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView16"
+        app:srcCompat="@drawable/ic_logo" />
+
+    <TextView
+        android:id="@+id/textView32"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="-215dp"
+        android:layout_marginTop="-75dp"
+        android:text="Contact Super Admin"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/imageView17"
+        app:layout_constraintTop_toBottomOf="@+id/imageView16" />
+
+    <ImageView
+        android:id="@+id/ic_contactBack"
+        android:layout_width="55dp"
+        android:layout_height="46dp"
+        android:layout_marginEnd="-75dp"
+        android:layout_marginBottom="-50dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView16"
+        app:layout_constraintEnd_toStartOf="@+id/imageView16"
+        app:srcCompat="@drawable/ic_back" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
