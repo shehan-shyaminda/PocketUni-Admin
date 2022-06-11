@@ -80,7 +80,7 @@ public class ResetStudentActivity extends AppCompatActivity {
                                             int randomIndex = random.nextInt(chars.length());
                                             sb.append(chars.charAt(randomIndex));
                                         }
-                                        db.collection("Student").document(studentEmail.getText().toString().trim().toUpperCase()).set(studentData(sb.toString()))
+                                        db.collection("Student").document(studentEmail.getText().toString().trim().toUpperCase()).update(studentData(sb.toString()))
                                                 .addOnCompleteListener(new OnCompleteListener<Void>() {
                                                     @Override
                                                     public void onComplete(@NonNull Task<Void> task) {

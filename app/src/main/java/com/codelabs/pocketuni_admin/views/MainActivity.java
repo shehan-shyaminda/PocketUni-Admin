@@ -131,8 +131,12 @@ public class MainActivity extends AppCompatActivity {
                         Log.e(TAG, "onNavigationItemSelected: " + item.getTitle());
                         break;
                     case R.id.adminReset:
-                        startActivity(new Intent(MainActivity.this, ResetAdminActivity.class));
                         mDrawerLayout.closeDrawer(GravityCompat.START);
+                        if (sharedPreferencesManager.getBooleanPreferences(SharedPreferencesManager.PREF_IS_SUPER_ADMIN)){
+                            startActivity(new Intent(MainActivity.this, ResetAdminActivity.class));
+                        }else{
+                            customAlertDialog.negativeDismissAlert(MainActivity.this, "Oops!", "Sign-in with super admin account to access this feature!",  CFAlertDialog.CFAlertStyle.NOTIFICATION);
+                        }
                         break;
                     case R.id.aboutUs:
                         startActivity(new Intent(MainActivity.this, AboutUsActivity.class));
@@ -146,7 +150,6 @@ public class MainActivity extends AppCompatActivity {
                         mDrawerLayout.closeDrawer(GravityCompat.START);
                         if (sharedPreferencesManager.getBooleanPreferences(SharedPreferencesManager.PREF_IS_SUPER_ADMIN)){
                             startActivity(new Intent(MainActivity.this, AddAdminActivity.class));
-                            mDrawerLayout.closeDrawer(GravityCompat.START);
                         }else{
                             customAlertDialog.negativeDismissAlert(MainActivity.this, "Oops!", "Sign-in with super admin account to access this feature!",  CFAlertDialog.CFAlertStyle.NOTIFICATION);
                         }

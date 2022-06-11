@@ -15,7 +15,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PocketUniAdmin">
         <activity
-            android:name=".SuccessMailActivity"
+            android:name=".views.SuccessMailActivity"
             android:exported="false" />
         <activity
             android:name=".views.ResetAdminActivity"

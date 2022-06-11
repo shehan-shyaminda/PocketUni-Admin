@@ -82,7 +82,7 @@ public class ResetAdminActivity extends AppCompatActivity {
                                             int randomIndex = random.nextInt(chars.length());
                                             sb.append(chars.charAt(randomIndex));
                                         }
-                                        db.collection("Admin").document(adminEmail.getText().toString().trim().toUpperCase()).set(adminData(sb.toString()))
+                                        db.collection("Admin").document(adminEmail.getText().toString().trim().toUpperCase()).update(adminData(sb.toString()))
                                                 .addOnCompleteListener(new OnCompleteListener<Void>() {
                                                     @Override
                                                     public void onComplete(@NonNull Task<Void> task) {
@@ -111,9 +111,9 @@ public class ResetAdminActivity extends AppCompatActivity {
                                                                 public void run() {
                                                                     try {
                                                                         Transport.send(mimeMessage);
+                                                                        customProgressDialog.dismissProgress();
                                                                         startActivity(new Intent(ResetAdminActivity.this, SuccessMailActivity.class));
                                                                         Animatoo.animateSlideLeft(ResetAdminActivity.this);
-                                                                        customProgressDialog.dismissProgress();
                                                                     } catch (MessagingException e) {
                                                                         new CustomAlertDialog().negativeAlert(ResetAdminActivity.this, "Oops!", "Something went wrong.\nPlease try again later!","OK", CFAlertDialog.CFAlertStyle.ALERT);
                                                                         e.printStackTrace();
