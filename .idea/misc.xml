@@ -9,27 +9,47 @@
         <entry key="app/src/main/res/drawable/ic_profile.xml" value="0.2105" />
         <entry key="app/src/main/res/drawable/layoutborder.xml" value="0.2985" />
         <entry key="app/src/main/res/drawable/profile_body_background.xml" value="0.2985" />
-        <entry key="app/src/main/res/layout/activity_add_new_batch.xml" value="0.41632385253906257" />
-        <entry key="app/src/main/res/layout/activity_add_new_event.xml" value="0.23170928955078124" />
+        <entry key="app/src/main/res/drawable/profile_headder_background.xml" value="0.2095" />
+        <entry key="app/src/main/res/drawable/row_notice.xml" value="0.2095" />
+        <entry key="app/src/main/res/drawable/spinner_background.xml" value="0.2095" />
+        <entry key="app/src/main/res/layout/activity_about_us.xml" value="0.2912948608398437" />
+        <entry key="app/src/main/res/layout/activity_add_admin.xml" value="0.37447916666666664" />
+        <entry key="app/src/main/res/layout/activity_add_batch_notice.xml" value="0.4435076904296875" />
+        <entry key="app/src/main/res/layout/activity_add_new_batch.xml" value="0.2843795776367188" />
+        <entry key="app/src/main/res/layout/activity_add_new_course.xml" value="0.203125" />
+        <entry key="app/src/main/res/layout/activity_add_new_event.xml" value="0.371827392578125" />
+        <entry key="app/src/main/res/layout/activity_add_new_hall.xml" value="0.203125" />
+        <entry key="app/src/main/res/layout/activity_add_new_lecturer.xml" value="0.22" />
         <entry key="app/src/main/res/layout/activity_add_new_subject.xml" value="0.3444463094075521" />
+        <entry key="app/src/main/res/layout/activity_add_public_notice.xml" value="0.4036458333333333" />
         <entry key="app/src/main/res/layout/activity_admin_profile.xml" value="0.21591491699218746" />
-        <entry key="app/src/main/res/layout/activity_calender_events.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_calender_events.xml" value="0.3962661743164063" />
+        <entry key="app/src/main/res/layout/activity_contact_super_admin.xml" value="0.203125" />
         <entry key="app/src/main/res/layout/activity_edit_profile.xml" value="0.203125" />
         <entry key="app/src/main/res/layout/activity_forgot_password.xml" value="0.21822916666666667" />
+        <entry key="app/src/main/res/layout/activity_help.xml" value="0.2609375" />
         <entry key="app/src/main/res/layout/activity_login.xml" value="0.21822916666666667" />
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.2376510620117187" />
+        <entry key="app/src/main/res/layout/activity_mail_confirmation.xml" value="0.2609375" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.67" />
+        <entry key="app/src/main/res/layout/activity_reset_admin.xml" value="0.3885416666666667" />
+        <entry key="app/src/main/res/layout/activity_reset_student_passwords.xml" value="0.47713470458984375" />
         <entry key="app/src/main/res/layout/activity_sign_up.xml" value="0.4036458333333333" />
+        <entry key="app/src/main/res/layout/activity_signup.xml" value="0.203125" />
         <entry key="app/src/main/res/layout/activity_splash.xml" value="0.21822916666666667" />
+        <entry key="app/src/main/res/layout/activity_success_mail.xml" value="0.4036458333333333" />
+        <entry key="app/src/main/res/layout/activity_super_admin_home.xml" value="0.2609375" />
         <entry key="app/src/main/res/layout/bottomsheet_calender.xml" value="0.203125" />
-        <entry key="app/src/main/res/layout/fragment_announcements.xml" value="0.21822916666666667" />
+        <entry key="app/src/main/res/layout/fragment_add_batch_notices.xml" value="0.203125" />
+        <entry key="app/src/main/res/layout/fragment_add_university_notices.xml" value="0.203125" />
+        <entry key="app/src/main/res/layout/fragment_announcements.xml" value="0.33" />
         <entry key="app/src/main/res/layout/fragment_first.xml" value="0.4036458333333333" />
-        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.37288513183593763" />
-        <entry key="app/src/main/res/layout/fragment_notices.xml" value="0.4036458333333333" />
-        <entry key="app/src/main/res/layout/fragment_profile.xml" value="0.203125" />
+        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/fragment_notices.xml" value="0.4604395604395604" />
+        <entry key="app/src/main/res/layout/fragment_profile.xml" value="0.24073944091796878" />
         <entry key="app/src/main/res/layout/fragment_second.xml" value="0.4036458333333333" />
         <entry key="app/src/main/res/layout/nav_drawer_headder.xml" value="0.203125" />
         <entry key="app/src/main/res/menu/nav_bottom_menu.xml" value="0.203125" />
-        <entry key="app/src/main/res/menu/nav_drawer_menu.xml" value="0.203125" />
+        <entry key="app/src/main/res/menu/nav_drawer_menu.xml" value="0.29765625" />
       </map>
     </option>
   </component>

@@ -11,12 +11,14 @@ public class CustomProgressDialog {
     }
 
     public void createProgress(){
-        kProgressHUD
-                .setStyle(KProgressHUD.Style.SPIN_INDETERMINATE)
-                .setAnimationSpeed(1)
-                .setDimAmount(0.5f)
-                .setCancellable(false)
-                .show();
+        if (!kProgressHUD.isShowing()){
+            kProgressHUD
+                    .setStyle(KProgressHUD.Style.SPIN_INDETERMINATE)
+                    .setAnimationSpeed(1)
+                    .setDimAmount(0.5f)
+                    .setCancellable(false)
+                    .show();
+        }
     }
 
     public void createTextProgress(String label){

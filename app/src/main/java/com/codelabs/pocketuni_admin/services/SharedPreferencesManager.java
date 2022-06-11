@@ -42,7 +42,7 @@ public class SharedPreferencesManager {
         return sharedPreferences.getBoolean(key,false);
     }
 
-    public void saveStudentDataPreferences(String key, Admin adminObject){
+    public void saveUserDataPreferences(String key, Admin adminObject){
         SharedPreferences.Editor editor = sharedPreferences.edit();
         Gson gson = new Gson();
         String json = gson.toJson(adminObject);
@@ -50,7 +50,7 @@ public class SharedPreferencesManager {
         editor.commit();
     }
 
-    public Admin getStudentDataPreferences(String key){
+    public Admin getUserDataPreferences(String key){
         String json = sharedPreferences.getString(key, "");
         Admin user = gson.fromJson(json, Admin.class);
         if (user != null) {

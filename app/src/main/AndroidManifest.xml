@@ -2,6 +2,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.codelabs.pocketuni_admin">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -10,31 +15,65 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PocketUniAdmin">
         <activity
-            android:name=".AddNewEvent"
+            android:name=".SuccessMailActivity"
             android:exported="false" />
         <activity
-            android:name=".EditProfile"
+            android:name=".views.ResetAdminActivity"
             android:exported="false" />
         <activity
-            android:name=".AdminProfile"
+            android:name=".views.AddAdminActivity"
             android:exported="false" />
         <activity
-            android:name=".AddNewSubject"
+            android:name=".views.AddBatchNoticeActivity"
             android:exported="false" />
         <activity
-            android:name=".AddNewBatch"
+            android:name=".views.AddPublicNoticeActivity"
             android:exported="false" />
         <activity
-            android:name=".CalenderEvents"
+            android:name=".views.AboutUsActivity"
             android:exported="false" />
         <activity
-            android:name=".LoginActivity"
+            android:name=".views.HelpSupportActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
-            android:exported="true" />
+            android:name=".views.AddNewHallActivity"
+            android:exported="false" />
         <activity
-            android:name=".SplashActivity"
+            android:name=".views.AddNewCourseActivity"
+            android:exported="false" />
+        <activity
+            android:name=".views.AddNewLecturerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".views.AddNewEventActivity"
+            android:exported="false" />
+        <activity
+            android:name=".views.AddNewSubjectActivity"
+            android:exported="false" />
+        <activity
+            android:name=".views.AddNewBatchActivity"
+            android:exported="false" />
+        <activity
+            android:name=".views.ResetStudentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".views.SignUpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".views.ForgotPasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".views.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".views.MailConfirmationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".views.MainActivity"
+            android:exported="true"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".views.SplashActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -1,9 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-        android:id="@+id/contactUs"
-        android:icon="@drawable/ic_contact"
-        android:title="Contact Us">
+        android:id="@+id/studReset"
+        android:icon="@drawable/ic_reset"
+        android:title="Student Login Reset">
+    </item>
+    <item
+        android:id="@+id/adminReset"
+        android:icon="@drawable/ic_reset"
+        android:title="Admin Login Reset">
+    </item>
+    <item
+        android:id="@+id/newAdmin"
+        android:icon="@drawable/ic_newadmin"
+        android:title="Add New Admin">
     </item>
     <item
         android:id="@+id/aboutUs"
@@ -11,8 +21,8 @@
         android:title="About Us">
     </item>
     <item
-        android:id="@+id/newAdmin"
-        android:icon="@drawable/ic_newadmin"
-        android:title="About Us">
+        android:id="@+id/helpSupport"
+        android:icon="@drawable/ic_help"
+        android:title="Help &amp; Support">
     </item>
 </menu>

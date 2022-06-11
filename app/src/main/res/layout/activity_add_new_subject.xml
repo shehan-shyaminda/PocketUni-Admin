@@ -4,77 +4,78 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AddNewSubject"
+    tools:context=".views.AddNewSubjectActivity"
     android:background="@color/white">
 
     <ImageView
+        android:id="@+id/btn_newSubBack"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/ic_menu_background"
+        android:padding="5dp"
+        android:src="@drawable/ic_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
         android:id="@+id/imageView4"
-        android:layout_width="308dp"
-        android:layout_height="162dp"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_newSubBack"
         app:srcCompat="@drawable/ic_new_subject" />
 
     <TextView
         android:id="@+id/textView8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:text="Add New Subject"
+        android:layout_marginTop="8dp"
+        android:text="Add New Event"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView4" />
 
+    <com.libizo.CustomEditText
+        android:id="@+id/txt_subName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:hint="Subject Name"
+        android:inputType="textPersonName"
+        android:padding="15dp"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8"
+        app:libIZO_clearIconTint="@color/primary_blue"
+        app:libIZO_setBorderColor="@color/primary_blue"
+        app:libIZO_setBorderView="true"
+        app:libIZO_setClearIconVisible="true"
+        app:libIZO_setCornerRadius="5dp"
+        app:libIZO_setStrokeWidth="1.5dp" />
+
     <Button
-        android:id="@+id/btnAddNewBatchScreen"
-        android:layout_width="294dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="20dp"
-        android:backgroundTint="#052FAD"
+        android:id="@+id/btnAddNewSub"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/custom_button_background"
+        android:padding="15sp"
         android:text="ADD NEW BATCH"
-        android:textColor="#FFFFFF"
+        android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtAddNewBatch3" />
+        app:layout_constraintTop_toBottomOf="@+id/txt_subName" />
 
-    <EditText
-        android:id="@+id/txtAddNewBatch"
-        android:layout_width="294dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="25dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Name"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView8" />
-
-    <EditText
-        android:id="@+id/txtAddNewBatch2"
-        android:layout_width="297dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="20dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Name"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtAddNewBatch" />
-
-    <EditText
-        android:id="@+id/txtAddNewBatch3"
-        android:layout_width="297dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="20dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Name"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtAddNewBatch2" />
 </androidx.constraintlayout.widget.ConstraintLayout>

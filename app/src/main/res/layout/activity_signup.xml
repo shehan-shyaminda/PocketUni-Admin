@@ -4,94 +4,143 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Signup">
+    android:forceDarkAllowed="false"
+    tools:context=".views.SignUpActivity">
 
-    <TextView
-        android:id="@+id/textView26"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="49dp"
-        android:layout_marginTop="58dp"
-        android:text="Compose Your Email Here,"
-        android:textColor="#000000"
-        android:textSize="24sp"
-        android:textStyle="bold"
+    <ImageView
+        android:id="@+id/ic_compose_email_back"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/ic_menu_background"
+        android:padding="5dp"
+        android:src="@drawable/ic_back"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/textView27"
-        android:layout_width="321dp"
-        android:layout_height="38dp"
-        android:layout_marginStart="49dp"
-        android:layout_marginTop="19dp"
-        android:justificationMode="inter_word"
-        android:text="Compose your mail below including your university email address"
-        android:textSize="16sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView26" />
-
-    <EditText
-        android:id="@+id/editTextSubject"
-        android:layout_width="316dp"
-        android:layout_height="52dp"
-        android:layout_marginStart="49dp"
-        android:layout_marginTop="56dp"
-        android:ems="10"
-        android:hint="Subject"
-        android:inputType="textPersonName"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView27" />
-
-    <Button
-        android:id="@+id/button"
-        android:layout_width="294dp"
-        android:layout_height="60dp"
-        android:layout_marginStart="58dp"
-        android:layout_marginTop="10dp"
-        android:backgroundTint="#052FAD"
-        android:text="SEND"
-        android:textColor="#FFFFFF"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine" />
-
-    <TextView
-        android:id="@+id/textView28"
-        android:layout_width="wrap_content"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout7"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="82dp"
-        android:layout_marginTop="41dp"
-        android:text="Already Have an Account?"
-        android:textSize="16sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button" />
-
-    <TextView
-        android:id="@+id/textView29"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="19dp"
-        android:layout_marginTop="41dp"
-        android:text="Login "
-        android:textColor="#3847CD"
-        android:textSize="16sp"
-        app:layout_constraintStart_toEndOf="@+id/textView28"
-        app:layout_constraintTop_toBottomOf="@+id/button" />
-
-    <EditText
-        android:id="@+id/editTextTextMultiLine"
-        android:layout_width="316dp"
-        android:layout_height="244dp"
-        android:layout_marginStart="54dp"
-        android:layout_marginTop="13dp"
-        android:layout_marginEnd="41dp"
-        android:layout_marginBottom="10dp"
-        android:ems="10"
-        android:gravity="start|top"
-        android:hint="Body"
-        android:inputType="textMultiLine"
-        app:layout_constraintBottom_toTopOf="@+id/button"
+        android:layout_marginTop="32dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextSubject" />
+        app:layout_constraintTop_toBottomOf="@+id/ic_compose_email_back">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:text="Compose Your Email Here"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="32dp"
+            android:justificationMode="inter_word"
+            android:text="Compose your mail below including your university email address"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.libizo.CustomEditText
+        android:id="@+id/txt_SignupSubject"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:hint="Subject"
+        android:inputType="text"
+        android:padding="15dp"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout7"
+        app:libIZO_clearIconTint="@color/secondary_blue"
+        app:libIZO_setBorderColor="@color/secondary_blue"
+        app:libIZO_setBorderView="true"
+        app:libIZO_setClearIconVisible="true"
+        app:libIZO_setCornerRadius="5dp"
+        app:libIZO_setStrokeWidth="1.5dp" />
+
+    <com.libizo.CustomEditText
+        android:id="@+id/txt_SignupBody"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="16dp"
+        android:gravity="top"
+        android:hint="Body"
+        android:inputType="textMultiLine"
+        android:padding="15dp"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_compose_email_send"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_SignupSubject"
+        app:libIZO_clearIconTint="@color/secondary_blue"
+        app:libIZO_setBorderColor="@color/secondary_blue"
+        app:libIZO_setBorderView="true"
+        app:libIZO_setCornerRadius="5dp"
+        app:libIZO_setStrokeWidth="1.5dp" />
+
+    <Button
+        android:id="@+id/btn_compose_email_send"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="64dp"
+        android:background="@drawable/custom_button_background"
+        android:padding="15sp"
+        android:text="SEND"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Already Have an Account?"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/btn_compose_email_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:text="Login"
+            android:textColor="@color/primary_blue"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView9"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

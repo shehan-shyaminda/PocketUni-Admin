@@ -4,77 +4,162 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AddNewBatch"
+    tools:context=".views.AddNewBatchActivity"
     android:background="@color/white">
 
     <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="310dp"
-        android:layout_height="168dp"
-        android:layout_gravity="center_horizontal"
+        android:id="@+id/btn_newBatchBack"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/ic_menu_background"
+        android:padding="5dp"
+        android:src="@drawable/ic_back"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_batch_banner" />
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <EditText
-        android:id="@+id/txtBatchYearIntake"
-        android:layout_width="294dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="16dp"
-        android:ems="10"
-        android:hint="Batch Year.Intake(ex:21.1)"
-        android:inputType="textPersonName"
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_newBatchBack">
 
-    <TextView
-        android:id="@+id/textView8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:text="Add New Batch"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-    <EditText
-        android:id="@+id/tctBatchType"
-        android:layout_width="294dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="12dp"
-        android:ems="10"
-        android:hint="Batch Type (P/F)"
-        android:inputType="textPersonName"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtBatchYearIntake" />
+            <com.libizo.CustomEditText
+                android:id="@+id/txtNumberOfStudents"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="32dp"
+                android:hint="Number of Students"
+                android:inputType="number"
+                android:padding="15dp"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtCourseShortName"
+                app:libIZO_clearIconTint="@color/primary_blue"
+                app:libIZO_setBorderColor="@color/primary_blue"
+                app:libIZO_setBorderView="true"
+                app:libIZO_setClearIconVisible="true"
+                app:libIZO_setCornerRadius="5dp"
+                app:libIZO_setStrokeWidth="1.5dp" />
 
-    <EditText
-        android:id="@+id/txtNumberOfStudents"
-        android:layout_width="294dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="20dp"
-        android:ems="10"
-        android:hint="Number of Students"
-        android:inputType="numberPassword"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tctBatchType" />
+            <com.libizo.CustomEditText
+                android:id="@+id/txtCourseShortName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="32dp"
+                android:hint="Batch Code (ex: COHDSE)"
+                android:inputType="textPersonName"
+                android:padding="15dp"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtBatchType"
+                app:libIZO_clearIconTint="@color/primary_blue"
+                app:libIZO_setBorderColor="@color/primary_blue"
+                app:libIZO_setBorderView="true"
+                app:libIZO_setClearIconVisible="true"
+                app:libIZO_setCornerRadius="5dp"
+                app:libIZO_setStrokeWidth="1.5dp" />
 
-    <Button
-        android:id="@+id/btnAddNewBatchScreen"
-        android:layout_width="294dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="16dp"
-        android:backgroundTint="#052FAD"
-        android:text="ADD NEW BATCH"
-        android:textColor="#FFFFFF"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtNumberOfStudents" />
+            <com.libizo.CustomEditText
+                android:id="@+id/txtBatchYearIntake"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="32dp"
+                android:hint="Batch Intake Year (ex:21.1)"
+                android:inputType="numberDecimal"
+                android:padding="15dp"
+                android:textSize="16sp"
+                app:libIZO_clearIconTint="@color/primary_blue"
+                app:libIZO_setBorderColor="@color/primary_blue"
+                app:libIZO_setBorderView="true"
+                app:libIZO_setClearIconVisible="true"
+                app:libIZO_setCornerRadius="5dp"
+                app:libIZO_setStrokeWidth="1.5dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView8"/>
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Add New Batch"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_batch_banner" />
+
+            <Spinner
+                android:id="@+id/txtCourse"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="32dp"
+                android:background="@drawable/spinner_background"
+                android:entries="@array/sample_array"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtBatchYearIntake" />
+
+            <Spinner
+                android:id="@+id/txtBatchType"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="32dp"
+                android:background="@drawable/spinner_background"
+                android:entries="@array/batch_types"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtCourse" />
+
+            <Button
+                android:id="@+id/btnAddNewBatch"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/custom_button_background"
+                android:padding="15sp"
+                android:textColor="@color/white"
+                android:text="ADD NEW LECTURER"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtNumberOfStudents" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
